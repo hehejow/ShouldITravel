@@ -1,30 +1,300 @@
-$main-color: #003366; // Cool dark blue
-$secondary-color: #f8f8f8; // Off-white
+.navibtn {
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 0 1px 0 1px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100px;
+    cursor: pointer;
+    white-space: nowrap;
+}
 
-body {
+.navibtn:hover {
+    background-color: #f7fafa;
+}
+
+.navibtn:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+}
+
+.backbtn {
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 0 1px 0px 1px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100px;
+    cursor: pointer;
+}
+
+.backbtn:hover {
+    background-color: #f7fafa;
+}
+
+.backbtn:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+}
+
+.post {
     display: flex;
+    min-width: 150px;
+    height: 30px;
+    width: 150px;
+    border: 1px solid #301934;
+    justify-self: center;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 2px #282828;
+    align-items: flex-start;
+}
+.post2 {
+    display: flex;
+    min-width: 150px;
+    height: 150px;
+    width: 150px;
+    border: 1px solid #301934;
+    justify-self: center;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 2px #282828;
+    align-items: flex-start;
+}
+
+.postkicker {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: #c1e2e2;
+    align-items: center;
+    padding: 5px;
+    font-family: "Roboto Condensed", sans-serif;
+    justify-content: center;
+}
+
+#post1 {
+    background-color: whitesmoke;
+    background-size: contain;
+}
+
+#post2 {
+    background-color: whitesmoke;
+    background-size: contain;
+}
+
+#post3 {
+    background-color: whitesmoke;
+    background-size: contain;
+}
+
+#post4 {
+    background-color: whitesmoke;
+    background-size: contain;
+}
+
+#post5 {
+    background-color: whitesmoke;
+    background-size: contain;
+}
+
+#post6 {
+    background-color: whitesmoke;
+    background-size: contain;
+}
+
+#post7 {
+    background-color: whitesmoke;
+    background-size: contain;
+}
+
+#post8 {
+    background-color: whitesmoke;
+    background-size: contain;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 5vh 30vh 1fr 3vh;
+  grid-gap: 0px;
+  grid-template-areas:
+    "nav nav nav"
+    "bb bb bb"
+    "sbl main sbr"
+    "ft ft ft";
+}
+
+.ft {
+  display: flex;
+  grid-area: ft;
+  background-color: #c1e2e2;
+  justify-content: start;
+  align-items: start;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  padding-left: 20px;
+  border: 2px solid #f6f6f6;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #c1e2e2;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 2vw;
+}
+
+.bb {
+  grid-area: bb;
+  background-color: darkslateblue;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #f1f1f1;
+  position: relative;
+}
+
+.sbl {
+  grid-area: sbl;
+  background-color: #f1f1f1;
+}
+
+.sbr {
+  grid-area: sbr;
+  background-color: #f1f1f1;
+}
+
+.main {
+  grid-area: main;
+  background-color: #f6f6f6;
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 100%;
+  justify-content: center;
+  padding: 5vh 5vw;
+  grid-gap: 5vh;
+  padding-top: 10vh;
+}
+
+.title1 {
+  text-align: center;
+  font-family: "viga", "Arial Narrow Bold", sans-serif;
+  font-size: 37px;
+  display: flex;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.copyright {
+  font-family: "viga";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 8px;
+  color: #f6f6f6;
+  padding-right: 3px;
+
+}
+
+.search {
+  min-width: 60px;
+  max-width: 120px;
+}
+
+.imgcaption {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 8px;
+  color: black;
+  padding-right: 3px;
+}
+
+.imgfigure {
+  display: block;
+}
+
+@media (min-width: 800px) and (max-width:1200px) {
+  .main {
+    grid-area: main;
+    background-color: #f6f6f6;
+    display: grid;
     flex-direction: column;
-    min-height: 100vh;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+    padding: 5vh 5vw;
+    grid-gap: 5vh;
+    padding-top: 10vh;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 5vh 30vh 1fr 3vh;
+    grid-gap: 0px;
+    grid-template-areas:
+      "nav nav nav"
+      "bb bb bb"
+      "sbl main sbr"
+      "ft ft ft";
+  }
 }
 
-main {
-    flex: 2;
-}
+@media (min-width: 1201px) {
+  .main {
+    grid-area: main;
+    background-color: #f6f6f6;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-around;
 
-section {
-    max-width: 800px;
-    margin: 50px auto;
-}
+    padding: 5vh 5vw;
+    grid-gap: 5vh;
+    padding-top: 10vh;
+  }
 
-#results {
-    border: 10px solid $main-color;
-    padding: 10px;
-}
-
-strong {
-    display: block;
-    margin-bottom: 10px;
-    font-family: 'Lobster', cursive;
-    font-size: 1.5rem; 
-    color: $main-color;
+  .container {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 5vh 30vh 1fr 3vh;
+    grid-gap: 0px;
+    grid-template-areas:
+      "nav nav nav"
+      "bb bb bb"
+      "sbl main sbr"
+      "ft ft ft";
+  }
 }
